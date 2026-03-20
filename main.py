@@ -1,4 +1,3 @@
-
 import os
 from fastapi import FastAPI
 from openai import OpenAI
@@ -38,3 +37,4 @@ async def webhook(update: dict):
         return {"ok": True}
     except Exception as e:
         return {"ok": False, "error": str(e)}
+     
